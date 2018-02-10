@@ -3,8 +3,6 @@ require("dotenv").config();
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var request = require('request');
-// var fs = require('fs');
-// var path = require('path');
 var keys = require('./keys.js');
 // console.log(keys);
 
@@ -100,22 +98,22 @@ if (process.argv.length < 3) {
     process.exit(1);
   }
 
-// var fs = require('fs');
-// var textFile = process.argv[2]
+var fs = require('fs');
+var textFile = process.argv[2]
 
-// fs.readFile("textFile", "utf8", function(err, data) {
+fs.readFile(textFile, "utf8", function(err, data) {
 
-//     if(err) {
-//         return console.log(err);
-//     }
+    if(err) {
+        return console.log(err);
+    }
 
-//     console.log('OK:' + textFile);
-//     console.log(data);
+    console.log('OK:' + textFile);
+    console.log(data);
 
 
-//         // fs.appendFileSync("random.txt", "random-text");
+        // fs.appendFileSync("random.txt", "random-text");
 
-//         // console.log(SAVED);
+        // console.log(SAVED);
     
-//     }
-// );
+    }
+);
