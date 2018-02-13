@@ -39,8 +39,6 @@ if (process.argv[2] === "spotify-this-song") {
 
     var songTitle = process.argv[3];
 
-
-
     spotify.search({
         type: 'track',
         query: songTitle
@@ -51,16 +49,16 @@ if (process.argv[2] === "spotify-this-song") {
 
         // console.log(data.tracks.items[0]);
 
-        var artist = data.tracks.items[0].album.artists[0].name
+        var artist = data.tracks.items[0].album.artists[0].name;
         console.log(artist);
 
-        var songUrl = data.tracks.items[0].album.external_urls.spotify
+        var songUrl = data.tracks.items[0].album.external_urls.spotify;
         console.log(songUrl);
 
-        var album = data.tracks.items[0].album.name
+        var album = data.tracks.items[0].album.name;
         console.log(album);
 
-        var songTitle = data.tracks.items[0].name
+        var songTitle = data.tracks.items[0].name;
         console.log(songTitle);
 
     });
@@ -75,7 +73,7 @@ if (process.argv[2] === "movie-this") {
     console.log(queryUrl);
 
     request(queryUrl, function (error, response, body) {
-    
+
                 if (!error && response.statusCode === 200) {
 
                     // console.log(body);
@@ -98,38 +96,52 @@ if (process.argv[2] === "movie-this") {
                         }
                     }
 
- if (process.argv[2] === "") {
+                    if (process.argv[3]) {
 
-    var movieTitle = "Mr. Nobody";
+                    
 
-    var queryUrl2 = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=trilogy"
-    console.log(queryUrl2);
+                        var movieTitle = "Mr. Nobody";
 
-    request(queryUrl2, function (error, response, body) {
-    if (!error && response.statusCode === 200) {
-  // console.log(body);
-    console.log("Movie Title:\n" + JSON.parse(body).Title);
-    console.log("This Movie Was Realsed in:\n" + JSON.parse(body).Year);
-    console.log("Actors:\n" + JSON.parse(body).Actors);
-    console.log("Language:\n" + JSON.parse(body).Language);
-    console.log("Country Movie Was Produced In:\n" + JSON.parse(body).Country);
-    console.log("Synopsis:\n" + JSON.parse(body).Plot);
-    console.log("This Movie's IMDB Rating Is:\n" + JSON.parse(body).imdbRating);
-    console.log("This Movie's Rotten Tomato Rating Is:\n" + JSON.parse(body).Ratings[1].Value);
-   }
-})
- }
-  }
-                        
-   var textFile = process.argv[2]
+                        var queryUrl2 = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=trilogy"
+                        console.log(queryUrl2);
 
-    fs.readFile(textFile, "utf8", function (err, data) {
+                        request(queryUrl2, function (error, response, body) {
+                            if (!error && response.statusCode === 200) {
+                                // console.log(body);
+                                console.log("Movie Title:\n" + JSON.parse(body).Title);
+                                console.log("This Movie Was Realsed in:\n" + JSON.parse(body).Year);
+                                console.log("Actors:\n" + JSON.parse(body).Actors);
+                                console.log("Language:\n" + JSON.parse(body).Language);
+                                console.log("Country Movie Was Produced In:\n" + JSON.parse(body).Country);
+                                console.log("Synopsis:\n" + JSON.parse(body).Plot);
+                                console.log("This Movie's IMDB Rating Is:\n" + JSON.parse(body).imdbRating);
+                                console.log("This Movie's Rotten Tomato Rating Is:\n" + JSON.parse(body).Ratings[1].Value);
+                            }
+                        })
+                    }
+                }
+            });
+                var textFile = process.argv[2];
 
-    if (err) {
-        return console.log(err);
-    }
+                fs.readFile(textFile, "utf8", function (err, data) {
 
-    console.log('OK:' + textFile);
-    console.log(data);
+                    if (err) {
+                        return console.log(err);
+                    }
 
- })
+                    console.log('OK:' + textFile);
+                    console.log(data);
+
+                });
+            }
+
+
+            // var movieTitle = "";
+
+// if (process.argv[3]){
+//     movieTitle = process.argv[3];    
+// } else {
+//     movieTitle = "Mr. Nobody";
+// }
+
+// request code goes here
