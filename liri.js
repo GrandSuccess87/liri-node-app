@@ -9,6 +9,13 @@ var keys = require('./keys.js');
 
 
 if (process.argv[2] === "my-tweets") {
+    myTweets();
+
+}
+
+function myTweets () {
+
+
     
         var client = new Twitter(keys.twitter);
     
@@ -31,22 +38,45 @@ if (process.argv[2] === "my-tweets") {
             }
         });
     
+    
     }
+     // if (process.argv[2] === "spotify-this-song"){
+            //     spotifyThisSong();
+            // }
+            
+            // function spotifyThisSong(title){
+            //     // some code here
+                
+            //     if (title){
+            //         var songTitle = title;
+            //     } else {
+            //         var songTitle = output ? output : "default";
+            //     }
+                
+            //     // rest of thecode here
+            // }
+            
     
     if (process.argv[2] === "spotify-this-song") {
-        
-            
-        
-          var output = "";
-          for (var i = 3; i < process.argv.length; i++) {
-            output += process.argv[i] + " ";
-          };
-        
-          // stores song name and default song name
-          //replace var songTitle with the if, else statement
-          var songTitle = output ? output : "'The Sign' by Ace of Base";
-        
-          console.log(output)
+        spotifyThisSong();   
+    
+    }
+
+    function spotifyThisSong (title) {
+
+        //create a variable for the output that the user puts in that'll accept multiple words
+        var output = "";
+        for (var i = 3; i < process.argv.length; i++) {
+          output += process.argv[i] + " ";
+        }; 
+
+        if (title){
+            var songTitle = title;
+        } else {
+            var songTitle = output ? output : "'The Sign' by Ace of Base";
+        }
+      
+        console.log(output)
         
           // authenticates spotify api
           var spotify = new Spotify(keys.spotify);
@@ -85,18 +115,29 @@ if (process.argv[2] === "my-tweets") {
               };
         
             });
-        }
+
+    }
+        
+        
 
         if(process.argv[2] === "movie-this") {
+            movieThis();
+        }    
+
+        function movieThis (title) {
+
+        
             var output = "";
-
-
-            
             for(var i = 3; i < process.argv.length; i++) {
                 output += process.argv[i] + " ";
             }
 
-            var movieName = output ? output: "Mr. Nobody";
+            
+        if (title){
+            var movieName = title;
+        } else {
+            var movieName = output ? output : "Mr. Nobody";
+        }
             console.log(output);
             
             var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy"
@@ -136,6 +177,7 @@ if (process.argv[2] === "my-tweets") {
         
                     }
             })
+        
         }
 
         if(process.argv[2] === "do-what-it-says") {
@@ -152,31 +194,28 @@ if (process.argv[2] === "my-tweets") {
                 return console.log(err);
             }
         
-                console.log('OK: ' + textFile);
+                console.log('OK: ' + "random.txt");
                 console.log(data);
 
                 //split the data contents so it's prettified and readable
                 var dataArray = data.split(" ");
+
+                if (dataArray[0] === "spotify-this-song") {
+                    spotifyThisSong (dataArray[1]);
+                }
+
+                if(dataArray[0] === "my-tweets") {
+                    myTweets();
+                }
+
+                if (dataArray[0] === "movie-this") {
+                    movieThis(dataArray[1]);
+                }
         });
             };
         
 
-            // if (process.argv[2] === "spotify-this-song"){
-            //     spotifyThisSong();
-            // }
-            
-            // function spotifyThisSong(title){
-            //     // some code here
-                
-            //     if (title){
-            //         var songTitle = title;
-            //     } else {
-            //         var songTitle = output ? output : "default";
-            //     }
-                
-            //     // rest of thecode here
-            // }
-            
+           
             // if (process.argv[2] === "do-what-it-says"){
             
             //     // skipped code
