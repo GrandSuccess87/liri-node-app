@@ -3,145 +3,191 @@ require("dotenv").config();
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var request = require('request');
-var fs = require('fs');
 var keys = require('./keys.js');
+
 // console.log(keys);
 
 
 if (process.argv[2] === "my-tweets") {
-
-    var client = new Twitter(keys.twitter);
-
-    var params = {
-        screen_name: 'Grand_Success',
-        count: 20
-    };
-
-    client.get('statuses/user_timeline', params, function (err, tweets, response) {
-        if (!err) {
-            for (var i = 0; i < tweets.length; i++) {
-
-                console.log(tweets[i].created_at);
-                console.log(tweets[i].text);
-                // console.log(tweets, null, 2);
-
+    
+        var client = new Twitter(keys.twitter);
+    
+        var params = {
+            screen_name: 'Grand_Success',
+            count: 20
+        };
+    
+        client.get('statuses/user_timeline', params, function (err, tweets, response) {
+            if (!err) {
+                for (var i = 0; i < tweets.length; i++) {
+                    
+                    console.log("Tweet:");
+                    console.log(tweets[i].text);
+                    
+                    console.log("Date Created:");
+                    console.log(tweets[i].created_at);
+    
+                }
             }
+        });
+    
+    }
+    
+    if (process.argv[2] === "spotify-this-song") {
+        
+            
+        
+          var output = "";
+          for (var i = 3; i < process.argv.length; i++) {
+            output += process.argv[i] + " ";
+          };
+        
+          // stores song name and default song name
+          //replace var songTitle with the if, else statement
+          var songTitle = output ? output : "'The Sign' by Ace of Base";
+        
+          console.log(output)
+        
+          // authenticates spotify api
+          var spotify = new Spotify(keys.spotify);
+        
+          spotify.search({
+            type: 'track',
+            query: songTitle
+          }, function(err, data) {
+              if (err) {
+                return console.log('Error occurred: ' + err);
+              }
+
+              // stores larger object (data) from Spotify
+              // console.log(data.tracks.items[0]);
+
+              var songInfo = data.tracks.items;
+
+              // loops through object
+              for (var i = 0; i < songInfo.length; i++) {
+        
+                var albumName = songInfo[i].album.name;
+                var artistName = songInfo[i].artists[0].name;
+                var preview = songInfo[i].album.external_urls.spotify
+                var songName = songInfo[i].name;
+                // console.log(songInfo);
+               
+                // Prints artist info to the console
+                console.log("Song: " + songName + "\nArtist: " + artistName + "\nAlbum: " + albumName);
+                
+                if (preview === null) {
+                  console.log("Unfortunately, It appears a preview url cannot be found. Perhaps you may want to try Youtube?");
+                } else {
+                  console.log("Song Preview: " + preview);
+                };
+                console.log("-----------------------------------------");
+              };
+        
+            });
         }
-    });
 
-}
+        if(process.argv[2] === "movie-this") {
+            var output = "";
 
 
+            
+            for(var i = 3; i < process.argv.length; i++) {
+                output += process.argv[i] + " ";
+            }
 
-if (process.argv[2] === "spotify-this-song") {
+            var movieName = output ? output: "Mr. Nobody";
+            console.log(output);
+            
+            var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy"
+            // console.log(queryUrl);
 
-    var spotify = new Spotify(keys.spotify);
+            // use request to retrieve info
+            request(queryUrl, function (error, response, body){
 
-    var songTitle = process.argv[3];
-
-    spotify.search({
-        type: 'track',
-        query: songTitle
-    }, function (err, data) {
-        if (err) {
-            return console.log('Error occurred: ' + err);
-        }
-
-        // console.log(data.tracks.items[0]);
-
-        var artist = data.tracks.items[0].album.artists[0].name;
-        console.log(artist);
-
-        var songUrl = data.tracks.items[0].album.external_urls.spotify;
-        console.log(songUrl);
-
-        var album = data.tracks.items[0].album.name;
-        console.log(album);
-
-        var songTitle = data.tracks.items[0].name;
-        console.log(songTitle);
-
-    });
-
-}
-
-if (process.argv[2] === "movie-this") {
-
-    var movieName = process.argv[3];
-
-    var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy"
-    console.log(queryUrl);
-
-    request(queryUrl, function (error, response, body) {
-
+                if(error) {
+                    return console.log("Error Occured: " + error);
+                }
+                
                 if (!error && response.statusCode === 200) {
 
-                    // console.log(body);
-                    console.log("Movie Title:\n" + JSON.parse(body).Title);
-                    console.log("This Movie Was Realsed in:\n" + JSON.parse(body).Year);
-                    console.log("Actors:\n" + JSON.parse(body).Actors);
-                    console.log("Language:\n" + JSON.parse(body).Language);
-                    console.log("Country Movie Was Produced In:\n" + JSON.parse(body).Country);
-                    console.log("Synopsis:\n" + JSON.parse(body).Plot);
-                    console.log("This Movie's IMDB Rating Is:\n" + JSON.parse(body).imdbRating);
-                    console.log("This Movie's Rotten Tomato Rating Is:\n" + JSON.parse(body).Ratings[1].Value);
+                    //store movie properties and values into a variable 
 
-                } else {
-                    var movieName = "";
+                        var movieTitle = JSON.parse(body).Title;
+                        var movieRelease =  JSON.parse(body).Year;
+                        var movieActors = JSON.parse(body).Actors;
+                        var movieLanguage = JSON.parse(body).Language;
+                        var movieCountry = JSON.parse(body).Country;
+                        var movieSynopsis = JSON.parse(body).Plot;
+                        var imdbRating = JSON.parse(body).imdbRating;
+                        var rTRating = JSON.parse(body).Ratings[1].Value;
 
-                    for (var i = 2; i < process.argv.length; i++) {
+                    //console log the movie data properties and values in one line to minimize errors
 
-                        if (i > 2 && i < process.argv.length) {
-                            movieName = movieName + "+" + process.argv[i];
-                        }
+                        console.log("Movie Title: " + movieTitle + "\nMovie Released In: " 
+                    + movieRelease + "\nActors: " + movieActors + "\nLanguage(s) of Movie: " 
+                    + movieLanguage + "\nCountry Movie Was Produced In: " + movieCountry + 
+                    "\nSynopsis: " + movieSynopsis + "\nThis Movie's IMDB Rating Is: " + 
+                    imdbRating + "\nThis Movie's Rotten Tomatoes Rating Is: " + rTRating);
+
+                    // Break points between movie data
+                    console.log("--------------------------------------");
+
+        
                     }
+            })
+        }
 
-                    if (process.argv[3]) {
+        if(process.argv[2] === "do-what-it-says") {
+            
+            //require file system
 
-                    
+            var fs = require('fs');
 
-                        var movieTitle = "Mr. Nobody";
-
-                        var queryUrl2 = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=trilogy"
-                        console.log(queryUrl2);
-
-                        request(queryUrl2, function (error, response, body) {
-                            if (!error && response.statusCode === 200) {
-                                // console.log(body);
-                                console.log("Movie Title:\n" + JSON.parse(body).Title);
-                                console.log("This Movie Was Realsed in:\n" + JSON.parse(body).Year);
-                                console.log("Actors:\n" + JSON.parse(body).Actors);
-                                console.log("Language:\n" + JSON.parse(body).Language);
-                                console.log("Country Movie Was Produced In:\n" + JSON.parse(body).Country);
-                                console.log("Synopsis:\n" + JSON.parse(body).Plot);
-                                console.log("This Movie's IMDB Rating Is:\n" + JSON.parse(body).imdbRating);
-                                console.log("This Movie's Rotten Tomato Rating Is:\n" + JSON.parse(body).Ratings[1].Value);
-                            }
-                        })
-                    }
-                }
-            });
-                var textFile = process.argv[2];
-
-                fs.readFile(textFile, "utf8", function (err, data) {
-
-                    if (err) {
-                        return console.log(err);
-                    }
-
-                    console.log('OK:' + textFile);
-                    console.log(data);
-
-                });
+            //read file is a method that contains a variable and a function.
+            //the function will either return an error and the data from the file.
+            fs.readFile("random.txt", "utf8", function (err, data) {
+        
+            if (err) {
+                return console.log(err);
             }
+        
+                console.log('OK: ' + textFile);
+                console.log(data);
 
+                //split the data contents so it's prettified and readable
+                var dataArray = data.split(" ");
+        });
+            };
+        
 
-            // var movieTitle = "";
-
-// if (process.argv[3]){
-//     movieTitle = process.argv[3];    
-// } else {
-//     movieTitle = "Mr. Nobody";
-// }
-
-// request code goes here
+            // if (process.argv[2] === "spotify-this-song"){
+            //     spotifyThisSong();
+            // }
+            
+            // function spotifyThisSong(title){
+            //     // some code here
+                
+            //     if (title){
+            //         var songTitle = title;
+            //     } else {
+            //         var songTitle = output ? output : "default";
+            //     }
+                
+            //     // rest of thecode here
+            // }
+            
+            // if (process.argv[2] === "do-what-it-says"){
+            
+            //     // skipped code
+            //     // we are inside fs.readFile callback function after var dataArray
+            //     var dataArray = data.split(" ");
+            
+            //     if (dataArray[0] === "my-tweets"){
+            //         myTweets();
+            //     }
+            
+            //     if (dataArray[0] === "spotify-this-song"){
+            //         spotifyThisSong(dataArray[1]);
+            //     }
+            // }
