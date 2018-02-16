@@ -197,19 +197,22 @@ function myTweets () {
                 console.log('OK: ' + "random.txt");
                 console.log(data);
 
-                //split the data contents so it's prettified and readable
-                var dataArray = data.split(" ");
+                //separate the data contents by comma
+                var dataArray = data.split(",");
 
                 if (dataArray[0] === "spotify-this-song") {
                     spotifyThisSong (dataArray[1]);
+                    
                 }
 
                 if(dataArray[0] === "my-tweets") {
                     myTweets();
+                    
                 }
 
                 if (dataArray[0] === "movie-this") {
                     movieThis(dataArray[1]);
+                    
                 }
         });
             };
