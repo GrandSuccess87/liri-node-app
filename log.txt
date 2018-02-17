@@ -1,0 +1,404 @@
+
+Song Title: Lost at Sea
+Artist(s): Ballyhoo!
+Album: Pineapple Grenade
+Song Preview: https://open.spotify.com/album/2j4TAFCCOhaMnirULGyvX7
+--------------------------------------------------
+Song Title: Lost at Sea
+Artist(s): Ballyhoo!
+Album: Pineapple Grenade
+Song Preview: https://open.spotify.com/album/2j4TAFCCOhaMnirULGyvX7
+--------------------------------------------------Movie Title: The Hunt for Red October
+Movie Released In: 1990
+Actors: Sean Connery, Alec Baldwin, Scott Glenn, Sam Neill
+Language(s) of Movie: English, Russian
+Country Movie Was Produced In: USA
+Synopsis: In November 1984, the Soviet Union's best submarine captain in their newest sub violates orders and heads for the USA. Is he trying to defect or to start a war?
+This Movie's IMDB Rating Is: 7.6
+This Movie's Rotten Tomatoes Rating Is: 86%
+--------------------------------------------------
+Song Title: Lost at Sea
+Artist(s): Ballyhoo!
+Album: Pineapple Grenade
+Song Preview: https://open.spotify.com/album/2j4TAFCCOhaMnirULGyvX7
+--------------------------------------------------Movie Title: Frozen
+Movie Released In: 2013
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+Language(s) of Movie: English, Norwegian
+Country Movie Was Produced In: USA
+Synopsis: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+This Movie's IMDB Rating Is: 7.5
+This Movie's Rotten Tomatoes Rating Is: 89%
+--------------------------------------------------Movie Title: Frozen
+Movie Released In: 2013
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+Language(s) of Movie: English, Norwegian
+Country Movie Was Produced In: USA
+Synopsis: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+This Movie's IMDB Rating Is: 7.5
+This Movie's Rotten Tomatoes Rating Is: 89%
+--------------------------------------------------
+Song Title: Lost at Sea
+Artist(s): Ballyhoo!
+Album: Pineapple Grenade
+Song Preview: https://open.spotify.com/album/2j4TAFCCOhaMnirULGyvX7
+--------------------------------------------------
+Song Title: Lost at Sea
+Artist(s): Ballyhoo!
+Album: Pineapple Grenade
+Song Preview: https://open.spotify.com/album/2j4TAFCCOhaMnirULGyvX7
+--------------------------------------------------
+Song Title: Lost at Sea
+Artist(s): Ballyhoo!
+Album: Pineapple Grenade
+Song Preview: https://open.spotify.com/album/2j4TAFCCOhaMnirULGyvX7
+--------------------------------------------------Movie Title: The Frozen Ground
+Movie Released In: 2013
+Actors: Nicolas Cage, Vanessa Hudgens, John Cusack, Dean Norris
+Language(s) of Movie: English, French
+Country Movie Was Produced In: USA
+Synopsis: An Alaska State Trooper partners with a young woman who escaped the clutches of serial killer Robert Hansen to bring the murderer to justice. Based on actual events.
+This Movie's IMDB Rating Is: 6.4
+This Movie's Rotten Tomatoes Rating Is: 60%
+--------------------------------------------------function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }function (err) {
+                            if (err) {
+                                return console.log(err);
+                            };
+                            console.log("log.txt was updated with Twitter Info!");
+            
+                        }Tweet: #standuptoracism #H&amp;M #2018 Appreciate the fix @MimicClothing https://t.co/9WJX5EBnZ5Date Created: Mon Jan 08 20:24:16 +0000 2018
+--------------------------------------------------Tweet: This past weekend I received the awesome opportunity to see Scottie… https://t.co/9fQf2qAWghDate Created: Wed Oct 25 02:56:03 +0000 2017
+--------------------------------------------------Tweet: Dang, Jeff Ross just took over! But Snoop is about to kill it! #BieberRoastDate Created: Tue Mar 31 03:21:55 +0000 2015
+--------------------------------------------------Tweet: Loving my Hairfinity Hair Vitamins. Shop Online at http://t.co/mHrdVhtpG8  #Healthy #Hair #Growth #Vitamins #HairfinityDate Created: Mon Mar 23 08:38:13 +0000 2015
+--------------------------------------------------Tweet: @OmamaXMarzuq @Funny_Truth Lmao, that's a good one! For a second I thought that was a pick up line someone gave youDate Created: Mon Mar 02 00:18:12 +0000 2015
+--------------------------------------------------Tweet: Thousands #protest for #EricGardner #Chicago #LakeShoreDrive #ICantBreathe  #AllLivesMatter #WeCantBreathe http://t.co/c5HWbFT258Date Created: Sat Dec 06 03:31:11 +0000 2014
+--------------------------------------------------Tweet: @OmamaXMarzuq @UberFacts I'm super late, but is this really true!?!Date Created: Sat Dec 06 02:26:19 +0000 2014
+--------------------------------------------------Tweet: Breaking Bad Binge #AMC 👑👑Date Created: Mon Aug 25 00:38:05 +0000 2014
+--------------------------------------------------Tweet: RT @adamlevine: Do it guys! #VoiceSave DELVINDate Created: Wed May 07 00:59:37 +0000 2014
+--------------------------------------------------Tweet: RT @adamlevine: Have you done it???? #voicesave @drchoice @katperkinsmusic DO IT!!!!Date Created: Wed May 07 00:57:50 +0000 2014
+--------------------------------------------------Tweet: @Delvin all the way!! His voice is soo unique! #VoicesaveDate Created: Wed May 07 00:56:08 +0000 2014
+--------------------------------------------------Tweet: Wow!!! It just keeps getting better &amp;&amp; better!! #ScandalDate Created: Fri Apr 04 03:16:41 +0000 2014
+--------------------------------------------------Tweet: Love my city this time of year! #StPatricksDayDate Created: Sat Mar 15 21:50:44 +0000 2014
+--------------------------------------------------Tweet: Up at it working, no Sunday Funday #MorningwinDate Created: Sun Mar 09 14:07:48 +0000 2014
+--------------------------------------------------Tweet: #Flowers for the #Birthday girl. Happy Birthday Mom!! http://t.co/Tr5fFBtmjCDate Created: Thu Mar 06 04:02:28 +0000 2014
+--------------------------------------------------Tweet: Checking out the buzz about the play " Buzzer" #ChillSaturdayDate Created: Sun Feb 16 02:07:17 +0000 2014
+--------------------------------------------------Tweet: @OmamaXMarzuq Likewise Chica!!Date Created: Mon Feb 10 04:13:33 +0000 2014
+--------------------------------------------------Tweet: @OmamaXMarzuq #MakingFitChoicesDate Created: Mon Feb 10 02:46:32 +0000 2014
+--------------------------------------------------Tweet: #standuptoracism #H&amp;M #2018 Appreciate the fix @MimicClothing https://t.co/9WJX5EBnZ5Date Created: Mon Jan 08 20:24:16 +0000 2018
+--------------------------------------------------
+Tweet: This past weekend I received the awesome opportunity to see Scottie… https://t.co/9fQf2qAWghDate Created: Wed Oct 25 02:56:03 +0000 2017
+--------------------------------------------------
+Tweet: Dang, Jeff Ross just took over! But Snoop is about to kill it! #BieberRoastDate Created: Tue Mar 31 03:21:55 +0000 2015
+--------------------------------------------------
+Tweet: Loving my Hairfinity Hair Vitamins. Shop Online at http://t.co/mHrdVhtpG8  #Healthy #Hair #Growth #Vitamins #HairfinityDate Created: Mon Mar 23 08:38:13 +0000 2015
+--------------------------------------------------
+Tweet: @OmamaXMarzuq @Funny_Truth Lmao, that's a good one! For a second I thought that was a pick up line someone gave youDate Created: Mon Mar 02 00:18:12 +0000 2015
+--------------------------------------------------
+Tweet: Thousands #protest for #EricGardner #Chicago #LakeShoreDrive #ICantBreathe  #AllLivesMatter #WeCantBreathe http://t.co/c5HWbFT258Date Created: Sat Dec 06 03:31:11 +0000 2014
+--------------------------------------------------
+Tweet: @OmamaXMarzuq @UberFacts I'm super late, but is this really true!?!Date Created: Sat Dec 06 02:26:19 +0000 2014
+--------------------------------------------------
+Tweet: Breaking Bad Binge #AMC 👑👑Date Created: Mon Aug 25 00:38:05 +0000 2014
+--------------------------------------------------
+Tweet: RT @adamlevine: Do it guys! #VoiceSave DELVINDate Created: Wed May 07 00:59:37 +0000 2014
+--------------------------------------------------
+Tweet: RT @adamlevine: Have you done it???? #voicesave @drchoice @katperkinsmusic DO IT!!!!Date Created: Wed May 07 00:57:50 +0000 2014
+--------------------------------------------------
+Tweet: @Delvin all the way!! His voice is soo unique! #VoicesaveDate Created: Wed May 07 00:56:08 +0000 2014
+--------------------------------------------------
+Tweet: Wow!!! It just keeps getting better &amp;&amp; better!! #ScandalDate Created: Fri Apr 04 03:16:41 +0000 2014
+--------------------------------------------------
+Tweet: Love my city this time of year! #StPatricksDayDate Created: Sat Mar 15 21:50:44 +0000 2014
+--------------------------------------------------
+Tweet: Up at it working, no Sunday Funday #MorningwinDate Created: Sun Mar 09 14:07:48 +0000 2014
+--------------------------------------------------
+Tweet: #Flowers for the #Birthday girl. Happy Birthday Mom!! http://t.co/Tr5fFBtmjCDate Created: Thu Mar 06 04:02:28 +0000 2014
+--------------------------------------------------
+Tweet: Checking out the buzz about the play " Buzzer" #ChillSaturdayDate Created: Sun Feb 16 02:07:17 +0000 2014
+--------------------------------------------------
+Tweet: @OmamaXMarzuq Likewise Chica!!Date Created: Mon Feb 10 04:13:33 +0000 2014
+--------------------------------------------------
+Tweet: @OmamaXMarzuq #MakingFitChoicesDate Created: Mon Feb 10 02:46:32 +0000 2014
+--------------------------------------------------
+Tweet: #standuptoracism #H&amp;M #2018 Appreciate the fix @MimicClothing https://t.co/9WJX5EBnZ5
+--------------------------------------------------
+Date Created: Mon Jan 08 20:24:16 +0000 2018
+--------------------------------------------------
+Tweet: This past weekend I received the awesome opportunity to see Scottie… https://t.co/9fQf2qAWgh
+--------------------------------------------------
+Date Created: Wed Oct 25 02:56:03 +0000 2017
+--------------------------------------------------
+Tweet: Dang, Jeff Ross just took over! But Snoop is about to kill it! #BieberRoast
+--------------------------------------------------
+Date Created: Tue Mar 31 03:21:55 +0000 2015
+--------------------------------------------------
+Tweet: Loving my Hairfinity Hair Vitamins. Shop Online at http://t.co/mHrdVhtpG8  #Healthy #Hair #Growth #Vitamins #Hairfinity
+--------------------------------------------------
+Date Created: Mon Mar 23 08:38:13 +0000 2015
+--------------------------------------------------
+Tweet: @OmamaXMarzuq @Funny_Truth Lmao, that's a good one! For a second I thought that was a pick up line someone gave you
+--------------------------------------------------
+Date Created: Mon Mar 02 00:18:12 +0000 2015
+--------------------------------------------------
+Tweet: Thousands #protest for #EricGardner #Chicago #LakeShoreDrive #ICantBreathe  #AllLivesMatter #WeCantBreathe http://t.co/c5HWbFT258
+--------------------------------------------------
+Date Created: Sat Dec 06 03:31:11 +0000 2014
+--------------------------------------------------
+Tweet: @OmamaXMarzuq @UberFacts I'm super late, but is this really true!?!
+--------------------------------------------------
+Date Created: Sat Dec 06 02:26:19 +0000 2014
+--------------------------------------------------
+Tweet: Breaking Bad Binge #AMC 👑👑
+--------------------------------------------------
+Date Created: Mon Aug 25 00:38:05 +0000 2014
+--------------------------------------------------
+Tweet: RT @adamlevine: Do it guys! #VoiceSave DELVIN
+--------------------------------------------------
+Date Created: Wed May 07 00:59:37 +0000 2014
+--------------------------------------------------
+Tweet: RT @adamlevine: Have you done it???? #voicesave @drchoice @katperkinsmusic DO IT!!!!
+--------------------------------------------------
+Date Created: Wed May 07 00:57:50 +0000 2014
+--------------------------------------------------
+Tweet: @Delvin all the way!! His voice is soo unique! #Voicesave
+--------------------------------------------------
+Date Created: Wed May 07 00:56:08 +0000 2014
+--------------------------------------------------
+Tweet: Wow!!! It just keeps getting better &amp;&amp; better!! #Scandal
+--------------------------------------------------
+Date Created: Fri Apr 04 03:16:41 +0000 2014
+--------------------------------------------------
+Tweet: Love my city this time of year! #StPatricksDay
+--------------------------------------------------
+Date Created: Sat Mar 15 21:50:44 +0000 2014
+--------------------------------------------------
+Tweet: Up at it working, no Sunday Funday #Morningwin
+--------------------------------------------------
+Date Created: Sun Mar 09 14:07:48 +0000 2014
+--------------------------------------------------
+Tweet: #Flowers for the #Birthday girl. Happy Birthday Mom!! http://t.co/Tr5fFBtmjC
+--------------------------------------------------
+Date Created: Thu Mar 06 04:02:28 +0000 2014
+--------------------------------------------------
+Tweet: Checking out the buzz about the play " Buzzer" #ChillSaturday
+--------------------------------------------------
+Date Created: Sun Feb 16 02:07:17 +0000 2014
+--------------------------------------------------
+Tweet: @OmamaXMarzuq Likewise Chica!!
+--------------------------------------------------
+Date Created: Mon Feb 10 04:13:33 +0000 2014
+--------------------------------------------------
+Tweet: @OmamaXMarzuq #MakingFitChoices
+--------------------------------------------------
+Date Created: Mon Feb 10 02:46:32 +0000 2014
+--------------------------------------------------
