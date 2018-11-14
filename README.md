@@ -1,6 +1,6 @@
-# liri-node-app
+# LIRI-NODE-APP
 
-Liri is command line node application.  Similar to how SIRI is a Speech Interpretation and Recognition Interface for iPhone, Liri is a language interpretation and recognition software interface that takes in parameters and returns data.
+LIRI is command line node application.  Similar to how SIRI is a Speech Interpretation and Recognition Interface for iPhone, LIRI is a language interpretation and recognition software interface that takes in parameters and returns data.  LIRI will search Spotify for songs, Twitter for Tweets, and OMDB for movies.
 
 Node packages for Twitter, Spotify, and Omdb APIs are used for this app.
 
